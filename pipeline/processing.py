@@ -15,7 +15,7 @@ from pipeline.helpers import get_vi_f, get_vi_nf
 
 
 def download_data(fn, data_dir):
-    url = "https://olivierpieters.be/data/{}".format(fn)
+    url = "https://zenodo.org/record/3897289/files/{}?download=1".format(fn)
     fn = os.path.join(data_dir, fn)
     if not os.path.isfile(fn):
         print("Downloading data from", url)
@@ -55,7 +55,7 @@ def load_data(src_dir, data_dir, exp_idx, data_type, augment_data):
             data_type = "cotton"
         elif (exp_idx == 1) and (data_type == "bg2"):
             data_type = "ytong"
-        csv_fn = "exp-{}-{}.csv".format(exp_idx, data_type)
+        csv_fn = "exp-{}-{}.csv".format(exp_idx+1, data_type)
         download_data(fn=csv_fn, data_dir=data_dir)
         df = pd.read_csv(os.path.join(data_dir, csv_fn))
         df["HHMMSS"] = pd.to_datetime(df["HHMMSS"])

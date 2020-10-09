@@ -1,3 +1,6 @@
 build/
 pipeline/.idea/
 pipeline/__pycache__/
+.idea/
+*.pkl
+*.csv
