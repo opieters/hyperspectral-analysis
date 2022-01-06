@@ -26,6 +26,7 @@ MIT. See LICENCE file.
 
 ## Citing
 
-If you use the code and/or our data, please consider citing the following publications.
+If you use the code and/or our data, please consider citing the following publications:
 
-TODO. Update when article published.
+- article: https://doi.org/10.1016/j.compag.2020.105825.
+- data: https://doi.org/10.5281/zenodo.3897289
