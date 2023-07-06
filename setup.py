@@ -9,5 +9,5 @@ setup(name='pipeline',
       author_email='olivier.pieters@ugent.be',
       packages=['pipeline'],
       package_data={"pipeline": ["data/*.csv"]},
-      install_requires=["scikit-learn==0.23.2", "PyYAML==5.4", "scipy==1.5.2", "pandas==1.1.0"]
+      install_requires=["scikit-learn==0.23.2", "PyYAML==5.4", "scipy==1.10.0", "pandas==1.1.0"]
      )
